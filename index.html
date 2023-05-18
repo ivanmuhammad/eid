@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Ekspedisi IKPM Depok</title>
+  </head>
+  <body style="background-color: #fafafa;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Ekspedisi Ikpm Depok
+              </a>
+          
+          <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daftar Paket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Hubungi Kami</a>
+              </li>
+            </ul>
+        </div>
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="container py-3">
+      <h3 class="text-center">Input Data Paket</h3>
+    </div>
+    <!-- form input -->
+    <div class="container shadow p-5 mb-3 bg-body " style="width: 90%; border-radius: 20px;">
+      <form>
+        <div class="row mb-5">
+          <!-- col kiri -->
+      
+          <div class="col-xl-4 col-md-6 col-lg-6 ">
+            <h5 class="py-2">Data Santri</h5>
+            <div class="mb-3">
+              <label for="" class="form-label"
+                >Nama</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Nama Lengkap"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Kelas</label>
+              <input class="form-control" id="kelas" placeholder="Kelas">   </input>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Stambuk</label>
+                <input type="text" class="form-control" id="stambuk" placeholder="Stambuk">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Pondok</label>
+                <select class="form-select" aria-label="Default select example" id="pondok">
+                    <option selected disabled>...</option>
+                    <option value="Gontor 1">Gontor 1</option>
+                    <option value="Gontor 2">Gontor 2</option>
+                    <option value="Gontor 3">Gontor 3</option>
+                    <option value="Gontor 4">Gontor 4</option>
+                    <option value="Gontor 5">Gontor 5</option>
+                    <option value="Gontor Putri 1">Gontor Putri 1</option>
+                    <option value="Gontor Putri 2">Gontor Putri 2</option>
+                    <option value="Gontor Putri 3">Gontor Putri 3</option>
+                    <option value="Gontor Putri 4">Gontor Putri 4</option>
+                    <option value="Unida Putra">Unida Putra</option>
+                    <option value="Unida Putri">Unida Putri</option>
+                    <option >Pondok Lain</option>
+                    
+                  </select>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Pondok Lain</label>
+                <input type="text" class="form-control" id="pondok" placeholder="Masukan Nama Pondok">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Daerah</label>
+                <input type="text" class="form-control" id="daerah" placeholder="Depok"     >
+            </div>
+          </div>
+
+          <!-- col data paket -->
+          
+          <div class="col-xl-4 col-md-6 col-lg-6">
+            <h5 class="py-2">Data Paket</h5>
+            
+            <div class="mb-3">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexCheckChecked" Checked>
+                    <label class="form-check-label" for="Paket_Input">paket</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexCheck" id="weselId">
+                    <label class="form-check-label" for="weselInput">Wesel</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexCheck" id="KontainerKoperElektronik">
+                    <label class="form-check-label" for="KontainerKoperElektronik">Kontainer Koper Elektronik</label>
+                  </div>
+            </div>
+            <div class="mb-3" id="paket">
+                <label for="" class="form-label" id="paket">Berat Paket</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Berat Paket" aria-label="" aria-describedby="">
+                    <span class="input-group-text" id="">KG</span>
+                  </div>    
+            </div>
+            <div class="mb-3" id="paket">
+                <label for="" class="form-label" id="hargaPaketId">Harga Paket</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="hargaPaket">Rp</span>
+                    <input type="text" class="form-control" placeholder="Harga Paket" aria-label="" aria-describedby="">
+                  </div>    
+            </div>
+            <div class="mb-3" id="paket">
+                <label for="" class="form-label" id="paket">Jumlah Wesel</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="jumlahWesel">Rp</span>
+                    <input type="text" class="form-control" placeholder="Jumlah Wesel" aria-label="" aria-describedby="">
+                  </div>    
+            </div>
+            <div class="mb-3" id="paket">
+                <label for="" class="form-label" id="hargaWeselId">Harga Wesel</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="">Rp</span>
+                    <input type="text" class="form-control" placeholder="Harga Wesel" aria-label="" aria-describedby="">
+                  </div>    
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Keterangan</label>
+                <input type="text" class="form-control" id="keterangan">
+            </div>
+           
+          </div>
+          <!-- ccol data wali -->
+        
+          <div class="col-xl-4 col-md-6 col-lg-6">
+            <h5 class="py-2">Data Wali Santri</h5>
+            <div class="mb-3">
+              <label for="" class="form-label"
+                >Nama Wali</label
+              >
+              <input type="text" class="form-control" id="" placeholder="Nama Wali"/>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">No. Tlpn</label>
+              <input class="form-control" id="no_Tlpn" placeholder="+628"></input>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Alamat Wali</label>
+              <input class="form-control" id="alamat" placeholder="Alamat"></input>
+              <div id="alamatHelp" class="form-text">Dibutuhkan Untuk Database</div>
+            </div>
+           
+          </div>
+          
+          
+          
+        </div>
+        <div class="mb-3 text-center"> 
+            <div class="alert alert-success" role="alert">
+                Sukses!!!
+              </div>
+              <div class="alert alert-danger" role="alert">
+                Ops, Tolong Coba Lagi
+              </div>
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            <button class="btn btn-primary m-2" type="submit()">Submit</button>
+            <button class="btn btn-danger m-2">Hapus</button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
